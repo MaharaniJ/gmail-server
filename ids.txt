@@ -1,0 +1,5 @@
+https://developers.facebook.com/apps/7588365514523860/settings/basic/
+
+https://console.cloud.google.com/apis/credentials/oauthclient/658146248429-n21q0m7i8nglc7ed28slo99hgdlkoaud.apps.googleusercontent.com?orgonly=true&project=stackoverflowr-b96ca&supportedpurview=project
+
+https://github.com/settings/applications/2349505

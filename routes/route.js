@@ -6,6 +6,7 @@ const {
   toggleStarredEmail,
   deleteEmails,
   moveEmailsToBin,
+  
 } = emailController;
 
 const routes = express.Router();
@@ -16,5 +17,6 @@ routes.get("/emails/:type", getEmails);
 routes.post("/starred", toggleStarredEmail);
 routes.delete("/delete", deleteEmails);
 routes.post("/bin", moveEmailsToBin);
+// routes.get("/auth",validateJWTToken)
 
 module.exports = routes;

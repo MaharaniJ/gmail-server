@@ -1,5 +1,7 @@
 const Email = require("../models/email.js");
 
+
+
 exports.saveSendEmails = async (req, res) => {
   try {
     // Validate that the required fields (type, name, date) are present in the request body
@@ -9,7 +11,7 @@ exports.saveSendEmails = async (req, res) => {
     }
 
     // Create and save the email
-    const email = new Email(req.body );
+    const email = new Email(req.body);
     await email.save();
 
     res.status(200).json("Email saved successfully");
@@ -17,17 +19,6 @@ exports.saveSendEmails = async (req, res) => {
     res.status(500).json(error.message);
   }
 };
-
-// exports.saveSendEmails = async (req, res) => {
-//   try {
-//     const email = new Email(req.body);
-//     email.save();
-
-//     res.status(200).json("email saved successfully");
-//   } catch (error) {
-//     res.status(500).json(error.message);
-//   }
-// };
 
 exports.getEmails = async (req, res) => {
   try {

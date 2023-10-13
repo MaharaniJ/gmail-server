@@ -1,0 +1,28 @@
+admin.initializeApp({
+  credential: admin.credential.applicationDefault(),
+  databaseURL: process.env.DB,
+});
+
+exports.validateJWTToken = async (req, res) => {
+  if (!req.headers.authorization) {
+    return res.status(401).json({ message: "Token not found" });
+  }
+
+  const token = req.headers.authorization.split(" ")[1];
+
+  try {
+    const decodedValue = await admin.auth().verifyIdToken(token);
+
+    if (!decodedValue) {
+      return res.status(400).json({ message: "Invalid token" });
+    }
+
+    console.log("JWT Decoded:", decodedValue); // Log the decoded value for debugging
+    return res.status(200).json({ message: true, data: decodedValue });
+  } catch (error) {
+    console.error("Error during JWT verification:", error); // Log the error for debugging
+    return res
+      .status(500)
+      .json({ message: "Internal server error", error: error.message });
+  }
+};
