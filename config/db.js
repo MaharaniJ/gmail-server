@@ -3,8 +3,6 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 const URL = process.env.DB;
-// const USERNAME = process.env.DB_USERNAME;
-// const PASSWORD = process.env.DB_PASSWORD;
 
 const Connection = () => {
   const DB_URI = URL;

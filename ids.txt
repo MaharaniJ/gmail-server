@@ -3,3 +3,9 @@ https://developers.facebook.com/apps/7588365514523860/settings/basic/
 https://console.cloud.google.com/apis/credentials/oauthclient/658146248429-n21q0m7i8nglc7ed28slo99hgdlkoaud.apps.googleusercontent.com?orgonly=true&project=stackoverflowr-b96ca&supportedpurview=project
 
 https://github.com/settings/applications/2349505
+
+https://developers.facebook.com/docs/facebook-login/web/
+https://developers.facebook.com/apps/7588365514523860/settings/basic/
+https://developers.facebook.com/apps/7588365514523860/fb-login/settings/
+https://developers.facebook.com/apps/7588365514523860/rate-limit-details/app/
+https://console.cloud.google.com/apis/credentials/consent/edit?orgonly=true&project=stackoverflowr-b96ca&supportedpurview=project

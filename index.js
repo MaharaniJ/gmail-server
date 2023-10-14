@@ -4,10 +4,12 @@ const Connection = require("./config/db");
 const routes = require("./routes/route");
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin:"https://adorable-queijadas-af5e45.netlify.app"
+}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use("/", routes);
+app.use("/", routes);           
 
 const PORT = 8000;
 Connection();
