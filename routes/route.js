@@ -17,6 +17,9 @@ routes.get("/emails/:type", getEmails);
 routes.post("/starred", toggleStarredEmail);
 routes.delete("/delete", deleteEmails);
 routes.post("/bin", moveEmailsToBin);
+routes.post("/",(req,res)=>{
+  res.json({message:"welcome to this page"})
+})
 // routes.get("/auth",validateJWTToken)
 
 module.exports = routes;

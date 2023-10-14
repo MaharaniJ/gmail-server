@@ -1,7 +1,5 @@
 const Email = require("../models/email.js");
 
-
-
 exports.saveSendEmails = async (req, res) => {
   try {
     // Validate that the required fields (type, name, date) are present in the request body
